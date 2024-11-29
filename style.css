@@ -1,0 +1,144 @@
+/* 全体の構成 */
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 10px;
+    background-color: #4dd2ff;
+  }
+  
+  body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+  }
+
+/*タイポグラフィー*/
+
+h1,h2 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+
+h1 {
+    font-size: 7rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+/*中身*/
+
+
+
+
+/*ヘッダー*/
+header {
+    background-color: #005f73;      /* ヘッダー背景色 */
+    color: white;                   /* ヘッダー文字色 */
+    padding: 20px 0;                 /* ヘッダーの上下パディング */
+    text-align: center;
+  }
+
+
+
+/*メイン*/
+
+  main {
+    display: flex;
+    flex-direction: column;         /* 縦並びにする */
+    align-items: center;            /* コンテンツを中央揃え */
+    padding: 40px 20px;             /* 上下左右にパディング */
+    gap: 20px;                      /* コンテンツの間隔 */
+  }
+  
+ 
+
+
+
+
+
+
+
+
+/* ul要素の共通スタイル */
+ul {
+    display: flex;
+    justify-content: center; /* 横並びに配置 */
+    gap: 10px; /* ボタンの間隔 */
+    list-style-type: none; /* デフォルトのリストマーカーを非表示 */
+    padding: 0;
+  }
+  
+  /* 時間選択用のul */
+  ul.Time-selection {
+    /* 丸型のボタン */
+    border-radius: 50%;
+  }
+  
+  /* レベル選択用のul */
+  ul.Level-selection {
+    /* 四角のボタン */
+    border-radius: 0;
+  }
+  
+  /* li要素のスタイル (共通) */
+  ul li {
+    background-color: #005f73; /* ボタンの背景色 */
+    color: #91edff; /* ボタンの文字色 */
+    padding: 10px 20px; /* ボタン内の余白 */
+    cursor: pointer; /* ポインタースタイル */
+    transition: background-color 0.3s ease; /* ホバー時に背景色が変わる */
+  }
+  
+  /* ホバー時のスタイル (共通) */
+  ul li:hover {
+    background-color: #0a9396; /* ホバー時の色 */
+    color: white; /* ホバー時の文字色 */
+  }
+  
+  /* 時間選択用のli (丸型) */
+  ul.Time-selection li {
+    border-radius: 100%; /* 丸型 */
+  }
+  
+  /* レベル選択用のli (四角型) */
+  ul.Level-selection li {
+    border-radius: 0; /* 四角型 */
+  }
+
+
+
+/*レポートのデザイン*/
+h2.Report-box {
+    background-color: #005f73; /* ボタンの背景色 */
+    color: #91edff; /* ボタンの文字色 */
+    padding: 10px 20px; /* ボタン内の余白 */
+    cursor: pointer; /* ポインタースタイル */
+    
+}
+
+
+
+
+
+
+/*フッター*/
+footer {
+    background-color: #005f73;      /* フッター背景色 */
+    color: white;                   /* フッター文字色 */
+    text-align: center;             /* フッター内テキストを中央揃え */
+    padding: 20px 0;                 /* フッターの上下パディング */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
